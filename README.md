@@ -41,10 +41,9 @@ Embedding Pipeline
 Qdrant Vector DB
         ↓
 Groq LLM API
+```
 
-
-
-# Run RavenFlow
+#Run RavenFlow
 
 ## Terminal 1
 
