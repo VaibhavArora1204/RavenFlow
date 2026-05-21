@@ -1,0 +1,15 @@
+docker compose up -d
+
+source .venv/Scripts/activate
+
+python -m uvicorn app.main:app --reload
+
+cd /d/Downloads/RavenFlow/ravenflow
+
+
+celery -A app.workers.ingestion_worker worker --pool=solo --loglevel=info
+
+cd /d/Downloads/RavenFlow/ravenflow/frontend
+
+
+npm run dev

@@ -1,0 +1,22 @@
+# Virtual env
+.venv/
+venv/
+
+# Env files
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build
+dist/
+build/
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
