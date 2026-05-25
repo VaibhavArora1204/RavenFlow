@@ -126,7 +126,7 @@ function App() {
       setLoading(true);
       setLoadingType("ingest");
       setIngestSuccess(false);
-      const response = await fetch("http://127.0.0.1:8000/documents", {
+      const response = await fetch("https://ravenflow.onrender.com/documents", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ source_url: url }),
@@ -149,7 +149,7 @@ function App() {
     try {
       setLoading(true);
       setLoadingType("search");
-      const response = await fetch("http://127.0.0.1:8000/search", {
+      const response = await fetch("https://ravenflow.onrender.com/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query }),
